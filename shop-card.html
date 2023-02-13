@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="shortcut icon" href="/icon/logo-MakeUp.png">
+    <title>MakeUp</title>
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="container">
+            <div class="navbar">
+                <div id="logo"><img src="./img/logoMakeUP.png">
+                </div>
+                <nav>
+                    <ul id="MenuList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href=''>About us</a></li>
+                        <li><a href=''>Contact Us</a></li>
+                        <li><a href=''>Top Sales</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <i class="bi bi-cart3"></i>
+                    <div class="cartAmount" id="cartAmount">0</div>
+                </div>
+                <i class=" menu-icon bi bi-list " onclick="menu()"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- shop card -->
+    <div class="small-container cart-page">
+        <!-- <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+
+    </div>
+    </td>
+            </tr>
+    </table> -->
+        <div class="cart-info" id="shoopingCar">
+
+        </div>
+
+        <!-- </table> -->
+        <!--  -->
+        <!-- </div> -->
+
+        <!-- <div class="total-price">
+        <table>
+            <tr>
+                <hr>
+                <td>Subtotal</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$220.00</td>
+            </tr>
+        </table> -->
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-3">
+                    <h3>SHOOPING </h3>
+                    <ul>
+                        <li>PROMOTIONS</li>
+                        <li>GIFT CARDS</li>
+                        <li>ORDERING ONLINE</li>
+                        <li>MY FAVOURITES</li>
+                        <li>LOVER PROGRAM</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>NEEED HELP? </h3>
+                    <ul>
+                        <li>TRACK MY ORDER</li>
+                        <li>RETURNS & EXCHANGES</li>
+                        <li>SHIPPING</li>
+                        <li>FAQ</li>
+                        <li>1 800 234 7561</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>ABOUT BRAND </h3>
+                    <ul>
+                        <li>OUR STORY</li>
+                        <li>COMMITMENTS</li>
+                        <li>CAREERS</li>
+                        <li>MEMBERSHIP</li>
+                        <li>PRO PRODUCTS</li>
+                    </ul>
+                </div>
+                <div class="footer-col-1">
+                    <div>
+                        <h3>BELONG TO <br> OUR COMUNITY</h3>
+                    </div>
+                    <div id="form">
+                        <p>Sign Up for MakeUp Emails.</p>
+                        <form action="" id="sign-up-form">
+                            <input type="email" placeholder="Enter your email adress" id="sign-up">
+                            <button type="submit" id="sign-up-button">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="footer-col-5">
+                        <ul class="app-logo">
+                            <li><i class="bi bi-facebook"></i></li>
+                            <li><i class="bi bi-twitter"></i></li>
+                            <li><i class="bi bi-instagram"></i></li>
+                            <li><i class="bi bi-snapchat"></i></li>
+                            <li><i class="bi bi-youtube"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="footer-col-2">
+                    <img src="./img/astronauta-mobile.jpeg" alt="">
+                    <p>Minim sit veniam anim Lorem .</p>
+                </div> -->
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Project Makeup</p>
+        </div>
+
+    </div>
+
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

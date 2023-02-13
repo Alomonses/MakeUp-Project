@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="shortcut icon" href="/icon/logo-MakeUp.png">
+    <title>MakeUp</title>
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="container">
+            <div class="navbar">
+                <div id="logo"><img src="./img/logoMakeUP.png">
+                </div>
+                <nav>
+                    <ul id="MenuList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href=''>About us</a></li>
+                        <li><a href=''>Contact Us</a></li>
+                        <li><a href=''>Top Sales</a></li>
+                    </ul>
+                </nav>
+                <div class="cart" id="link-to-cart">
+                    <i class="bi bi-cart3"></i>
+                    <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+                <!-- <img id="cart
+                    src="https://cdn.iconscout.com/icon/free/png-256/cart-grocery-store-shopping-shop-30488.png?w=128&f=avif"
+                    alt=""> -->
+                <!-- <img src="./icon/menu-icon.png" class="menu-icon" onclick="menu()"> -->
+                <i class=" menu-icon bi bi-list " onclick="menu()"></i>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <img id="sale" src="./img/sale.jpeg" alt="sale">
+    </div>
+
+
+    <!-- <div class="row">
+            <div class="col-2">
+                <h1>PAODJCN SAÑCIKND KDCNDÁKNV</h1>
+                <p>Ad cupidatat cupidatat ipsum duis eiusmod ea irure. Est cillum occaecat sit laborum dolor ex
+                    consequat ipsum. Cupidatat irure ea deserunt anim incididunt elit pariatur. Amet magna ullamco
+                    consectetur do est duis excepteur. Qui culpa occaecat non quis nostrud veniam qui eiusmod et tempor
+                    laborum. Cillum commodo nisi consectetur sit minim sit non qui velit. Eiusmod qui est duis laborum
+                    culpa.</p>
+                <a href="" class="btn">Go now</a>
+            </div>
+            <div class="col-2">
+                <img src="./img/astronauta-mobile.jpeg" alt=""> -->
+    <!-- <div class="leading">
+                <img src="./img/astronauta-mobile.jpeg" alt="" id="leading-container-1">
+                <img src="./img/astronauta-mobile.jpeg" alt="" id="leading-container-2">
+                <div id="descriptioon-text">
+                    <h1>PAODJCN SAÑCIKND KDCNDÁKNV</h1>
+                    <p>Ad cupidatat cupidatat ipsum duis eiusmod ea irure. Est cillum occaecat sit laborum dolor ex
+                        consequat ipsum. Cupidatat irure ea deserunt anim incididunt elit pariatur. Amet magna ullamco
+                        consectetur do est duis excepteur. Qui culpa occaecat non quis nostrud veniam qui eiusmod et
+                        tempor
+                        laborum. Cillum commodo nisi consectetur sit minim sit non qui velit. Eiusmod qui est duis
+                        laborum
+                        culpa.</p>
+                    <a href="" class="btn">Go now</a>
+                </div>-->
+    <!-- </div>
+        </div> -->
+    <!-- </section> -->
+    <!-- </div> -->
+
+
+    <!-- More products -->
+    <section>
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="./img/main-1.jpeg">
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/main-2.jpeg">
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/main-3.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./img/dior.jpeg" alt="" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>DIOR.</p>
+                    <h1>GLOSS</h1>
+                    <small>Non ullamco aute enim aute culpa. Tempor nisi irure et amet quis consectetur irure laboris ex
+                        labore excepteur. Eiusmod sunt aute ipsum magna incididunt incididunt dolore veniam laboris
+                        dolor. Qui minim consequat sit dolor aliqua sint ut nulla officia aliqua exercitation dolore
+                        cillum. Ex dolor officia consequat ea id. Aliqua dolore et ad mollit elit pariatur. Elit est
+                        minim et eiusmod laborum et sint adipisicing adipisicing sunt proident veniam ex amet.</small>
+                    <a href="" class="btn">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- products -->
+    <div class="small-container">
+        <h2 class="tittle">Featured Products</h2>
+        <div class="row" id="item-list">
+            <!-- <div class="col-4">
+                <img src="./img/astronauta-mobile.jpeg" alt="">
+                <h4>Brand</h4>
+                <p>Name</p>
+                <p>Price</p>
+                <a href="" class="add-car">Add To Car</a>
+            </div>
+            <div class="col-4">
+                <img src="./img/astronauta-mobile.jpeg" alt="">
+                <h4>Brand</h4>
+                <p>Name</p>
+                <p>Price</p>
+                <a href="" class="add-car">Add To Car</a>
+            </div>
+            <div class="col-4">
+                <img src="./img/astronauta-mobile.jpeg" alt="">
+                <h4>Brand</h4>
+                <p>Name</p>
+                <p>Price</p>
+                <a href="" class="add-car">Add To Car</a>
+            </div>
+            <div class="col-4">
+                <img src="./img/astronauta-mobile.jpeg" alt="">
+                <h4>Brand</h4>
+                <p>Name</p>
+                <p>Price</p>
+                <a href="" class="add-car">Add To Car</a>
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-3">
+                    <h3>SHOOPING </h3>
+                    <ul>
+                        <li>PROMOTIONS</li>
+                        <li>GIFT CARDS</li>
+                        <li>ORDERING ONLINE</li>
+                        <li>MY FAVOURITES</li>
+                        <li>LOVER PROGRAM</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>NEEED HELP? </h3>
+                    <ul>
+                        <li>TRACK MY ORDER</li>
+                        <li>RETURNS & EXCHANGES</li>
+                        <li>SHIPPING</li>
+                        <li>FAQ</li>
+                        <li>1 800 234 7561</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>ABOUT BRAND </h3>
+                    <ul>
+                        <li>OUR STORY</li>
+                        <li>COMMITMENTS</li>
+                        <li>CAREERS</li>
+                        <li>MEMBERSHIP</li>
+                        <li>PRO PRODUCTS</li>
+                    </ul>
+                </div>
+                <div class="footer-col-1">
+                    <div>
+                        <h3>BELONG TO <br> OUR COMUNITY</h3>
+                    </div>
+                    <div id="form">
+                        <p>Sign Up for MakeUp Emails.</p>
+                        <form action="" id="sign-up-form">
+                            <input type="email" placeholder="Enter your email adress" id="sign-up">
+                            <button type="submit" id="sign-up-button">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="footer-col-5">
+                        <!-- <ul class="app-logo">
+                            <li><img src="./icon/facebook.png" alt="facebook"></li>
+                            <li><img src="./icon/twitter.png" alt="Twitter"></li>
+                            <li><img src="./icon/intagram.png" alt="Instagram"></li>
+                            <li><img src="./icon/snapchat.png" alt="SnapChat"></li>
+                            <li><img src="./icon/youtube.jpeg" alt="Youtube"></li>
+                        </ul> -->
+                        <ul class="app-logo">
+                            <li><i class="bi bi-facebook"></i></li>
+                            <li><i class="bi bi-twitter"></i></li>
+                            <li><i class="bi bi-instagram"></i></li>
+                            <li><i class="bi bi-snapchat"></i></li>
+                            <li><i class="bi bi-youtube"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="footer-col-2">
+                    <img src="./img/astronauta-mobile.jpeg" alt="">
+                    <p>Minim sit veniam anim Lorem .</p>
+                </div> -->
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Project Makeup</p>
+        </div>
+
+    </div>
+
+
+    <!-- Java Script -->
+    <!-- <script>
+
+        var MenuList = document.getElementById("MenuList");
+
+        MenuList.style.maxHeight = "0px";
+
+        function menu() {
+            if (MenuList.style.maxHeight == "0px") {
+                MenuList.style.maxHeight = "200px"
+            }
+            else {
+                MenuList.style.maxHeight = "0px"
+            }
+        }
+    </script> -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
